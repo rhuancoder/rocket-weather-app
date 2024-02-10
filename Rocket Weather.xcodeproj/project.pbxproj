@@ -10,6 +10,7 @@
 		A7330EE72B72BD83002E8AEA /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7330EE62B72BD83002E8AEA /* HourlyForecastCollectionViewCell.swift */; };
 		A77DEDE52B74326C00432913 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77DEDE42B74326C00432913 /* DailyForecastTableViewCell.swift */; };
 		A77DEDE72B75473E00432913 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77DEDE62B75473E00432913 /* UIView+Extensions.swift */; };
+		A77DEDE92B7585E000432913 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77DEDE82B7585E000432913 /* Service.swift */; };
 		A7B454852B7304B600BA7E77 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B454842B7304B600BA7E77 /* Color+Extensions.swift */; };
 		A7E274912B6C362000A724AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E274902B6C362000A724AD /* AppDelegate.swift */; };
 		A7E274932B6C362000A724AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E274922B6C362000A724AD /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 		A7330EE62B72BD83002E8AEA /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		A77DEDE42B74326C00432913 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
 		A77DEDE62B75473E00432913 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A77DEDE82B7585E000432913 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A7B454842B7304B600BA7E77 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		A7E2748D2B6C362000A724AD /* Rocket Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rocket Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E274902B6C362000A724AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				A77DEDE42B74326C00432913 /* DailyForecastTableViewCell.swift */,
 				A7B454842B7304B600BA7E77 /* Color+Extensions.swift */,
 				A77DEDE62B75473E00432913 /* UIView+Extensions.swift */,
+				A77DEDE82B7585E000432913 /* Service.swift */,
 				A7E274992B6C362200A724AD /* Assets.xcassets */,
 				A7E2749B2B6C362200A724AD /* LaunchScreen.storyboard */,
 				A7E2749E2B6C362200A724AD /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77DEDE72B75473E00432913 /* UIView+Extensions.swift in Sources */,
+				A77DEDE92B7585E000432913 /* Service.swift in Sources */,
 				A7B454852B7304B600BA7E77 /* Color+Extensions.swift in Sources */,
 				A7E274952B6C362000A724AD /* ViewController.swift in Sources */,
 				A77DEDE52B74326C00432913 /* DailyForecastTableViewCell.swift in Sources */,
