@@ -20,7 +20,7 @@ class Service {
     private let session = URLSession.shared
     
     func fetchData(city: City, _ completion: @escaping (ForecastResponse?) -> Void) {
-        guard let url = URL(string: "\(baseURL)?lat=\(city.lat)&lon=\(city.lon)&appid=\(apiKey)") else { return }
+        guard let url = URL(string: "\(baseURL)?lat=\(city.lat)&lon=\(city.lon)&appid=\(apiKey)&units=metric") else { return }
         
         let task = session.dataTask(with: url) { data, response, error in
             guard let data else {
