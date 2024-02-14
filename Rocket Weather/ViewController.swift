@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     private lazy var backgroundView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -188,7 +188,7 @@ class ViewController: UIViewController {
         
         if forecastResponse?.current.dt.isDayTime() ?? true {
             backgroundView.image = .backgroundDay
-        } 
+        }
         else {
             backgroundView.image = .backgroundNight
         }
@@ -224,49 +224,45 @@ class ViewController: UIViewController {
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 35),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -35),
-            headerView.heightAnchor.constraint(equalToConstant: 150)
+            headerView.heightAnchor.constraint(equalToConstant: 150),
             
-        ])
-        
-        NSLayoutConstraint.activate([
             cityLabel.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 15),
             cityLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15),
             cityLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -15),
             cityLabel.heightAnchor.constraint(equalToConstant: 20),
+            
             temperatureLabel.topAnchor.constraint(equalTo: cityLabel.bottomAnchor, constant: 12),
             temperatureLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 18),
             temperatureLabel.heightAnchor.constraint(equalToConstant: 71),
+            
             weatherIcon.heightAnchor.constraint(equalToConstant: 86),
             weatherIcon.widthAnchor.constraint(equalToConstant: 86),
             weatherIcon.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -18),
             weatherIcon.centerYAnchor.constraint(equalTo: temperatureLabel.centerYAnchor),
-            weatherIcon.leadingAnchor.constraint(equalTo: temperatureLabel.trailingAnchor, constant: 8)
-        ])
-        
-        NSLayoutConstraint.activate([
+            weatherIcon.leadingAnchor.constraint(equalTo: temperatureLabel.trailingAnchor, constant: 8),
+            
             statsStackView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 24),
             statsStackView.widthAnchor.constraint(equalToConstant: 206),
-            statsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
+            statsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
             hourlyForecastLabel.topAnchor.constraint(equalTo: statsStackView.bottomAnchor, constant: 29),
             hourlyForecastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 35),
             hourlyForecastLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -35),
+            
             hourlyCollectionView.topAnchor.constraint(equalTo: hourlyForecastLabel.bottomAnchor, constant: 22),
             hourlyCollectionView.heightAnchor.constraint(equalToConstant: 84),
             hourlyCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            hourlyCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
+            hourlyCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
             dailyForecastLabel.topAnchor.constraint(equalTo: hourlyCollectionView.bottomAnchor, constant: 29),
             dailyForecastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 35),
             dailyForecastLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -35),
+            
             dailyForecastTableView.topAnchor.constraint(equalTo: dailyForecastLabel.bottomAnchor, constant: 16),
             dailyForecastTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             dailyForecastTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             dailyForecastTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            
         ])
     }
 }
